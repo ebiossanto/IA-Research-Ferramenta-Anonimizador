@@ -125,4 +125,4 @@ MIT License - Livre para uso, modificação e distribuição com atribuição ad
 
 Para dúvidas, contribuir ou discutir:
 - Issues: https://github.com/ebiossanto/IA-Research-Ferramenta-Anonimizador/issues
-- Email: contato@muta.io
+- Email: euambiente@gmail.com
