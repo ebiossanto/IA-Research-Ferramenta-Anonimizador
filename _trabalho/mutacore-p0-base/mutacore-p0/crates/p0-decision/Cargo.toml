@@ -1,0 +1,10 @@
+[package]
+name="p0-decision"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+[dependencies]
+p0-domain={path="../p0-domain"}
+p0-policy={path="../p0-policy"}
+p0-verifier={path="../p0-verifier"}
+p0-recovery={path="../p0-recovery"}

@@ -1,0 +1,11 @@
+{
+  "max_velocity": 30.0,
+  "max_acceleration": 3.0,
+  "max_braking": 8.0,
+  "min_guaranteed_braking": 6.0,
+  "reaction_time_s": 0.25,
+  "cycle_time_s": 0.05,
+  "minimum_separation": 2.0,
+  "discretization_margin": 0.5,
+  "proof_budget_ns": 5000000
+}

@@ -1,0 +1,24 @@
+flowchart LR
+    A[Agente de IA\nNão confiável] -->|1. ActionRequest estruturado\nTLS/mTLS ou socket protegido\nnonce + TTL + schema| B[Broker de Ações\nAPI autenticada]
+    B -->|2. validação de tamanho\nidentidade e anti-replay| P[Policy Controller\nDeny by default\npolítica versionada]
+    P -->|3. PolicyDecision\npolicy_id + versão + hash| B
+    B -->|4. capability curta\nescopo: execução/ação/recursos| S[Executor / Sandbox\nusuário não-root\nrootfs read-only\nseccomp + quotas]
+    S -->|5. resultado estruturado\nstdout redigido + status| B
+
+    B -->|evento imutável\nsem segredos| L[Audit Writer]
+    P -->|decisão + hash da política| L
+    S -->|telemetria + violações| L
+    L -->|append-only\nchain hash + assinatura periódica| AUDIT[(Audit Store\nWORM / externo)]
+
+    K[KMS / Secret Store\nchaves separadas\nrotação + revogação] -->|envelope keys| L
+    K -->|transport/snapshot keys| B
+    B -->|manifesto + snapshot validado| SNAP[(Snapshot Store\ncriptografado e imutável)]
+    SNAP -->|restore somente após\nassinatura/hash + autorização| B
+
+    U[Operador / Browser] -->|HTTPS\nsessão curta + MFA\nCSRF/CSP + RBAC| API[Web API]
+    API -->|nunca direto ao executor| B
+    API -->|logs somente leitura| AUDIT
+    API -->|aprovação explícita| P
+
+    H[Host / Kernel / VM] -. boundary de isolamento .-> S
+    AUDIT -->|eventos sanitizados| X[Alertas / SIEM]

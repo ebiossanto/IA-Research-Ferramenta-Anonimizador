@@ -1,0 +1,4 @@
+name = "MutaCoreP0"
+version = "0.1.0"
+defaultTargets := #[`MutaCoreP0]
+lean_lib MutaCoreP0

@@ -1,0 +1,10 @@
+[package]
+name="p0-gateway"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+[dependencies]
+p0-domain={path="../p0-domain"}
+p0-decision={path="../p0-decision"}
+p0-capability={path="../p0-capability"}
+p0-simulator={path="../p0-simulator"}

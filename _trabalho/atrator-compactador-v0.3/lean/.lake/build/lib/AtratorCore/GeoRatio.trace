@@ -1,0 +1,5 @@
+{"log":
+ [{"message":
+   ".> LEAN_PATH=.\\.\\.lake\\build\\lib PATH c:\\Users\\Euzebio\\.elan\\toolchains\\lean-4.15.0\\bin\\lean.exe .\\.\\.\\.\\AtratorCore\\GeoRatio.lean -R .\\.\\.\\. -o .\\.\\.lake\\build\\lib\\AtratorCore\\GeoRatio.olean -i .\\.\\.lake\\build\\lib\\AtratorCore\\GeoRatio.ilean -c .\\.\\.lake\\build\\ir\\AtratorCore\\GeoRatio.c --json",
+   "level": "trace"}],
+ "depHash": "531220707741820499"}

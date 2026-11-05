@@ -1,0 +1,23 @@
+id,titulo,exige
+T-RNG,SplitMix64 determinístico e idêntico nas 3 linguagens,doc lean py rs tpy trs
+T-SAM,Amostrador geométrico bilateral exato,doc py rs tpy trs
+T-D-REM,removal: g*v <= d*removal e removal <= v,doc lean py rs tpy trs
+T-D-CONTRACT,Contrato de descarga d*D(v)+g*v <= d*v,doc lean py rs tpy trs
+T-D-MONO,Lema de monotonia (d-g)(b-a) >= 0,doc lean py rs tpy trs
+T-D-POS,removal >= 1 e D(v) < v,doc lean py rs tpy trs
+T-ISS-LYAP,Decréscimo de Lyapunov com taxa de fundo g0,doc lean py rs tpy trs
+T-ISS-INV,Invariância de [0;B] (limite último),doc lean py rs tpy trs
+T-ISS-CLOSED,Cota ISS fechada (forma aditiva inteira),doc py rs tpy trs
+T-LAT,Cota de latência de liquidação,doc py rs tpy trs
+T-F-EVICT,Independência do estado após evicção,doc lean py rs tpy trs
+T-F-ANON,Apagamento estrutural da identidade (0 bits),doc lean py rs tpy trs
+T-F-DROP,Esquecimento exato por descarte de janela,doc py rs tpy trs
+T-DP-SENS,Sensibilidade L1 <= Q em uma coordenada,doc lean py rs tpy trs
+T-DP-GEO,Razão de massas do mecanismo geométrico,doc lean py rs tpy trs
+T-DP-TRI,Desigualdade triangular da distância,doc lean tpy trs
+T-DP-EPS,eps0 = Q ln(q/p) (justo),doc py rs tpy trs
+T-DP-INFO,Informação mútua <= log2(2e^eps/(e^eps+1)),doc py tpy trs
+T-DP-UTIL,Erro esperado = 1/sinh(eps0/Q),doc py tpy trs
+T-TIMELINE,Linha do tempo bruto -> zero residual,doc py rs tpy trs
+T-WIPE,Zeragem best-effort do bruto,doc py rs tpy trs
+T-GOLD,Saída golden idêntica Python/Rust,doc py rs tpy trs

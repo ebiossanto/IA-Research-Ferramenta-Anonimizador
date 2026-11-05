@@ -1,0 +1,8 @@
+[package]
+name="p0-synthesizer"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+[dependencies]
+p0-certificate={path="../p0-certificate"}
+p0-obligation={path="../p0-obligation"}

@@ -1,0 +1,23 @@
+name = "atrator_compactador"
+version = "0.2.0"
+defaultTargets = ["AtratorCore"]
+
+# Mathlib (fase 2: probabilidade real). Fixado na tag compatível com o toolchain lean-4.15.0.
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.15.0"
+
+# Núcleo: só Lean 4 "core" (sem Mathlib). Construção padrão: `lake build`.
+[[lean_lib]]
+name = "AtratorCore"
+
+# Extras: agregação, distância (Int.natAbs), PRNG (UInt64) e vetores diferenciais (native_decide).
+# Construção separada: `lake build AtratorExtras`.
+[[lean_lib]]
+name = "AtratorExtras"
+
+# Probabilidade real (Mathlib): razão de pesos do geométrico, eps0 = Q ln(q/p).
+# Construção separada: `lake build AtratorProb`.
+[[lean_lib]]
+name = "AtratorProb"

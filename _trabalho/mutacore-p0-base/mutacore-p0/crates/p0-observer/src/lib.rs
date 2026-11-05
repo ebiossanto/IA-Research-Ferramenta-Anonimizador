@@ -1,0 +1,2 @@
+#![forbid(unsafe_code)]
+use p0_domain::{LogicalTime,Observation,ObservationBounds,State}; pub trait Observer{fn observe(&self,s:&State)->Observation;} pub struct ExactObserver; impl Observer for ExactObserver{fn observe(&self,s:&State)->Observation{Observation{estimated_state:s.clone(),uncertainty:ObservationBounds{position_error:0.0,velocity_error:0.0,actuation_error:0.0},observed_at:LogicalTime(s.time.0)}}}

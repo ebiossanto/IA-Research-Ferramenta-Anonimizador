@@ -1,0 +1,4 @@
+/target
+/runs
+*.log
+.DS_Store

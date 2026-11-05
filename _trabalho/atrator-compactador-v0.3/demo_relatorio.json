@@ -1,0 +1,19 @@
+{
+  "ciclos": 300,
+  "eventos_recebidos": 1201,
+  "rejeitados_por_limite_I": 0,
+  "irreversiveis": 135,
+  "brutos_ainda_no_estado": 2,
+  "exposicao_viva_atual": 11,
+  "max_exposicao": 54,
+  "limite_B": 120,
+  "violacoes_B": 0,
+  "max_latencia": 5,
+  "limite_latencia": 45,
+  "violacoes_latencia": 0,
+  "registros_apagados": 1199,
+  "janelas_seladas": 6,
+  "janelas_evictadas": 0,
+  "janelas_no_anel": 6,
+  "epsilon_por_registro": 1.000208
+}

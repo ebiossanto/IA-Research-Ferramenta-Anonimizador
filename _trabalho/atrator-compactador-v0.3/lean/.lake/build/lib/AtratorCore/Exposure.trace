@@ -1,0 +1,5 @@
+{"log":
+ [{"message":
+   ".> LEAN_PATH=.\\.\\.lake\\build\\lib PATH c:\\Users\\Euzebio\\.elan\\toolchains\\lean-4.15.0\\bin\\lean.exe .\\.\\.\\.\\AtratorCore\\Exposure.lean -R .\\.\\.\\. -o .\\.\\.lake\\build\\lib\\AtratorCore\\Exposure.olean -i .\\.\\.lake\\build\\lib\\AtratorCore\\Exposure.ilean -c .\\.\\.lake\\build\\ir\\AtratorCore\\Exposure.c --json",
+   "level": "trace"}],
+ "depHash": "14950356280289716970"}

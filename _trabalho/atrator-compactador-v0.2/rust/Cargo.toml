@@ -1,0 +1,18 @@
+[package]
+name = "atrator"
+version = "0.2.0"
+edition = "2021"
+description = "Atrator compactador / anonimizador: descarga com cota ISS, compactação com ruído geométrico e evicção"
+publish = false
+
+[lib]
+name = "atrator"
+path = "src/lib.rs"
+
+[[bin]]
+name = "experiments"
+path = "src/bin/experiments.rs"
+
+[profile.release]
+opt-level = 3
+debug = false

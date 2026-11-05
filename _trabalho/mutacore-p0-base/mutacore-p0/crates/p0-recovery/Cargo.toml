@@ -1,0 +1,8 @@
+[package]
+name="p0-recovery"
+version.workspace=true
+edition.workspace=true
+license.workspace=true
+[dependencies]
+p0-domain={path="../p0-domain"}
+p0-policy={path="../p0-policy"}

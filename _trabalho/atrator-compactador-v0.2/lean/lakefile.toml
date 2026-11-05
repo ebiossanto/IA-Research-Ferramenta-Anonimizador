@@ -1,0 +1,12 @@
+name = "atrator_compactador"
+version = "0.2.0"
+defaultTargets = ["AtratorCore"]
+
+# Núcleo: só Lean 4 "core" (sem Mathlib). Construção padrão: `lake build`.
+[[lean_lib]]
+name = "AtratorCore"
+
+# Extras: agregação, distância (Int.natAbs), PRNG (UInt64) e vetores diferenciais (native_decide).
+# Construção separada: `lake build AtratorExtras`.
+[[lean_lib]]
+name = "AtratorExtras"

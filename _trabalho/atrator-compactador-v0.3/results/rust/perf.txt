@@ -1,0 +1,9 @@
+# medição: cargo run --release --bin experiments -- --perf
+# máquina: AMD Ryzen 3 3200G (4 núcleos / 4 lógicos), Windows 11 Pro, Rust 1.80.0 (MSVC)
+# NÃO determinístico; medições curtas (<0.1 s) são ruidosas. Servico: 50 repetições de 2000 ciclos.
+perf.steady.cycles_per_s=1125898 perf.steady.records_per_s=4591412 perf.steady.seconds=0.0089
+perf.burst.cycles_per_s=1707611 perf.burst.records_per_s=3866032 perf.burst.seconds=0.0044
+perf.stop.cycles_per_s=2038154 perf.stop.records_per_s=4288277 perf.stop.seconds=0.0025
+perf.exact.cycles_per_s=1291789 perf.exact.records_per_s=5158115 perf.exact.seconds=0.0039
+perf.servico_splitmix.cycles_per_s=2511900 perf.servico_splitmix.events_per_s=2518883 perf.servico_splitmix.seconds=0.0398
+perf.servico_csprng.cycles_per_s=1065430 perf.servico_csprng.events_per_s=1068392 perf.servico_csprng.seconds=0.0939
